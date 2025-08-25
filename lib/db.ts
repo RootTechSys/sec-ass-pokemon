@@ -23,6 +23,8 @@ export async function executeQuery(query: string, params: any[] = []) {
   return results
 }
 
+export const query = executeQuery
+
 export async function closeConnection() {
   if (connection) {
     await connection.end()
