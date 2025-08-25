@@ -1,0 +1,46 @@
+INSERT INTO cards (name, type, rarity, image, hp, attack, defense, price) VALUES
+('Pikachu', 'Electric', 'Common', '/placeholder.svg?height=200&width=150', 60, 55, 40, 10),
+('Charizard', 'Fire', 'Rare', '/placeholder.svg?height=200&width=150', 120, 130, 100, 50),
+('Blastoise', 'Water', 'Rare', '/placeholder.svg?height=200&width=150', 110, 110, 120, 45),
+('Venusaur', 'Grass', 'Rare', '/placeholder.svg?height=200&width=150', 100, 100, 120, 45),
+('Mewtwo', 'Psychic', 'Legendary', '/placeholder.svg?height=200&width=150', 130, 150, 90, 100),
+('Mew', 'Psychic', 'Legendary', '/placeholder.svg?height=200&width=150', 100, 100, 100, 80),
+('Gyarados', 'Water', 'Rare', '/placeholder.svg?height=200&width=150', 130, 125, 79, 40),
+('Dragonite', 'Dragon', 'Rare', '/placeholder.svg?height=200&width=150', 91, 134, 95, 45),
+('Alakazam', 'Psychic', 'Rare', '/placeholder.svg?height=200&width=150', 55, 50, 45, 35),
+('Machamp', 'Fighting', 'Rare', '/placeholder.svg?height=200&width=150', 90, 130, 80, 40),
+('Gengar', 'Ghost', 'Rare', '/placeholder.svg?height=200&width=150', 60, 65, 60, 35),
+('Lapras', 'Water', 'Rare', '/placeholder.svg?height=200&width=150', 130, 85, 80, 40),
+('Snorlax', 'Normal', 'Rare', '/placeholder.svg?height=200&width=150', 160, 110, 65, 45),
+('Articuno', 'Ice', 'Legendary', '/placeholder.svg?height=200&width=150', 90, 85, 100, 75),
+('Zapdos', 'Electric', 'Legendary', '/placeholder.svg?height=200&width=150', 90, 90, 85, 75),
+('Moltres', 'Fire', 'Legendary', '/placeholder.svg?height=200&width=150', 90, 100, 90, 75),
+('Squirtle', 'Water', 'Common', '/placeholder.svg?height=200&width=150', 44, 48, 65, 8),
+('Wartortle', 'Water', 'Common', '/placeholder.svg?height=200&width=150', 59, 63, 80, 15),
+('Charmander', 'Fire', 'Common', '/placeholder.svg?height=200&width=150', 39, 52, 43, 8),
+('Charmeleon', 'Fire', 'Common', '/placeholder.svg?height=200&width=150', 58, 64, 58, 15),
+('Bulbasaur', 'Grass', 'Common', '/placeholder.svg?height=200&width=150', 45, 49, 49, 8),
+('Ivysaur', 'Grass', 'Common', '/placeholder.svg?height=200&width=150', 60, 62, 63, 15),
+('Caterpie', 'Bug', 'Common', '/placeholder.svg?height=200&width=150', 45, 30, 35, 5),
+('Metapod', 'Bug', 'Common', '/placeholder.svg?height=200&width=150', 50, 20, 55, 7),
+('Butterfree', 'Bug', 'Common', '/placeholder.svg?height=200&width=150', 60, 45, 50, 12);
+
+INSERT INTO users (username, email, password_hash, coins, avatar) VALUES
+('Trainer123', 'trainer123@pokemon.com', '$2b$10$hashedpassword1', 500, '/placeholder.svg?height=40&width=40'),
+('PokeMaster', 'pokemaster@pokemon.com', '$2b$10$hashedpassword2', 750, '/placeholder.svg?height=40&width=40'),
+('CardCollector', 'collector@pokemon.com', '$2b$10$hashedpassword3', 300, '/placeholder.svg?height=40&width=40'),
+('GymLeader', 'gymleader@pokemon.com', '$2b$10$hashedpassword4', 1000, '/placeholder.svg?height=40&width=40');
+
+INSERT INTO user_cards (user_id, card_id, quantity) VALUES
+(1, 1, 2),
+(1, 2, 1),
+(1, 17, 3),
+(2, 3, 1),
+(2, 4, 1),
+(2, 5, 1),
+(3, 6, 1),
+(3, 7, 2),
+(3, 8, 1),
+(4, 9, 1),
+(4, 10, 1),
+(4, 14, 1);
